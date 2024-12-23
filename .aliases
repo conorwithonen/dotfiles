@@ -1,2 +1,0 @@
-# Creates new ed25519 ssh keys
-alias newkey="ssh-keygen -t ed25519 -b 4096 -C ${ssh_email} -N '' -f"

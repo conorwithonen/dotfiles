@@ -1,0 +1,8 @@
+[includeIf "gitdir:~/projects/"]
+  path = ~/.gitconfig-personal
+[credential]
+	helper = cache
+[core]
+	excludesfile = ~/.gitignore_global
+[commit]
+	template = /Users/conor.manning/.stCommitMsg
