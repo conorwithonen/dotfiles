@@ -1,0 +1,15 @@
+{
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "_templates/",
+    "_archive/"
+  ],
+  "vimMode": true,
+  "showRibbon": true,
+  "newFileLocation": "folder",
+  "attachmentFolderPath": "_assets",
+  "showUnsupportedFiles": false,
+  "promptDelete": false,
+  "propertiesInDocument": "visible",
+  "newFileFolderPath": "Intake"
+}
