@@ -3,7 +3,8 @@
 # 	themes, etc... but you still need to go into Obsidian and "Open folder as new vault." 
 
 
-VAULT_NAME='test-note-dir' VAULT_PATH="$HOME"
+VAULT_NAME='Notes' 
+VAULT_PATH="$HOME"
 OBSIDIAN_PATH="$VAULT_PATH/$VAULT_NAME"
 OBSIDIAN_CONFIGS="${DOTFILES}/config/.obsidian"
 
