@@ -28,3 +28,4 @@ Things that I want to be able to use, but never tracked in git. Ex. Aliases and 
 ## TODO
 - Create file that runs everything and break into steps (copy, link, config, init, etc...)
 - Make config dir from dotfiles reachable by env (~/.config link maybe)
+- Brew packages
