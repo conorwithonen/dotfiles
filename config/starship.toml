@@ -29,8 +29,9 @@ error_symbol = '[ ->](bold red) '
 vimcmd_symbol = "[ ->](bold green)"
 
 [python]
-format = '\([$virtualenv]($style)\) '
+format = '(\([$virtualenv]($style)\) )'
 style = "bold red"
+detect_extensions = []
 
 [fill]
 symbol = ' '
