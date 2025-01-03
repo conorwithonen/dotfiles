@@ -13,9 +13,9 @@ macos-icon-screen-color = red,black
 
 # Keybinds
 # # Splits
-keybind = super+alt+l=goto_split:right
-keybind = super+alt+j=goto_split:bottom
-keybind = super+alt+h=goto_split:left
-keybind = super+alt+k=goto_split:top
-keybind = super+left_bracket=goto_split:previous
-keybind = super+right_bracket=goto_split:next
+keybind = shift+l=goto_split:right
+keybind = shift+j=goto_split:bottom
+keybind = shift+h=goto_split:left
+keybind = shift+k=goto_split:top
+keybind = shift+left_bracket=goto_split:previous
+keybind = shift+right_bracket=goto_split:next
