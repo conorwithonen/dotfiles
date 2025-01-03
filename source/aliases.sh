@@ -11,13 +11,18 @@ alias -- -="cd -"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
+# Git
 alias g="git"
+alias glog="git log"
+alias glogo="git log --oneline"
+
 
 # Old
 alias ipython='python3 -m IPython'
 alias python='python3'
 alias pip='pip3'
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+alias mkvenv='python3 -m venv venv && source ./venv/bin/activate'
 
 # Misc -
 # Lock the screen (when going AFK)
