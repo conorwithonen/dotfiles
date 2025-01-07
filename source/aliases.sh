@@ -12,6 +12,7 @@ alias vim=nvim
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
+alias ss="cd ~/Documents/screenshots"
 # Git
 alias g="git"
 alias glog="git log"

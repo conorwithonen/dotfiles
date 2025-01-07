@@ -47,15 +47,15 @@ alt-shift-equal = 'resize smart +50'
 
 alt-f = 'fullscreen'
 
-alt-1 = 'workspace --auto-back-and-forth 1'
-alt-2 = 'workspace --auto-back-and-forth 2'
-alt-3 = 'workspace --auto-back-and-forth 3'
-alt-4 = 'workspace --auto-back-and-forth 4'
-alt-5 = 'workspace --auto-back-and-forth 5'
-alt-6 = 'workspace --auto-back-and-forth 6'
-alt-7 = 'workspace --auto-back-and-forth 7'
-alt-8 = 'workspace --auto-back-and-forth 8'
-alt-9 = 'workspace --auto-back-and-forth 9'
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8'
+alt-9 = 'workspace 9'
 alt-b = 'workspace --auto-back-and-forth Browser'
 alt-c = 'workspace --auto-back-and-forth Coding'
 alt-e = 'workspace --auto-back-and-forth Email'
@@ -64,6 +64,7 @@ alt-n = 'workspace --auto-back-and-forth Notes'
 alt-o = 'workspace --auto-back-and-forth O'
 alt-s = 'workspace --auto-back-and-forth Spotify'
 alt-t = 'workspace --auto-back-and-forth Terminal'
+alt-x = 'workspace --auto-back-and-forth Excel'
 
 # Move workspaces
 alt-tab = 'workspace-back-and-forth'
@@ -86,6 +87,7 @@ alt-shift-n = 'move-node-to-workspace Notes'
 alt-shift-o = 'move-node-to-workspace O'
 alt-shift-s = 'move-node-to-workspace Spotify'
 alt-shift-t = 'move-node-to-workspace Terminal'
+alt-shift-x = 'move-node-to-workspace Excel'
 
 alt-shift-semicolon = 'mode service'
 [mode.service.binding]
@@ -132,6 +134,11 @@ run = "move-node-to-workspace Notes"
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Outlook'
 run = "move-node-to-workspace Email"
+
+# Workspace X - Excel
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Excel'
+run = "move-node-to-workspace Excel"
 
 # Always float screenshot tool
 [[on-window-detected]]
