@@ -29,6 +29,17 @@ function aws-list-images() {
 	local repo_name=$1
 	aws ecr list-images --repository-name $repo_name | jq '.imageIds[].imageTag'
 }
+# AWS - List instances
+function aws-list-instances() {
+  aws ec2 describe-instances \
+    --query "Reservations[*].Instances[*].[InstanceId, Tags[?Key=='Name'].Value | [0], PrivateIpAddress]" \
+    --output table
+}
+# AWS - Describe instance by id
+function aws-describe-image() {
+	local instance_id=$1
+	aws ec2 describe-instances --instance-ids $instance_id | jq
+}
 
 # Docker - Open up Jupyter Lab container and open browser
 function j-lab() {
