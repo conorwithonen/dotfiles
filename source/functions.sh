@@ -3,6 +3,12 @@ function mkd() {
 	mkdir -p "$@" && cd "$_";
 }
 
+# Check expiration of certificate
+function check-cert() {
+  local DOMAIN=$1
+  echo | openssl s_client -servername $DOMAIN -connect $DOMAIN:443 2> /dev/null | openssl x509 -noout -dates
+}
+
 
 # AWS - Get currently logged in aws account name
 function aws-account() {
