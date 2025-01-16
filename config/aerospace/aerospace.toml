@@ -4,7 +4,7 @@ start-at-login = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 30
+accordion-padding = 50
 
 default-root-container-layout = 'tiles'
 default-root-container-orientation = 'auto'

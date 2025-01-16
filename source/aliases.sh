@@ -13,10 +13,12 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias ss="cd ~/Documents/screenshots"
+alias sshconfig="vim ~/.ssh/config"
 # Git
 alias g="git"
-alias glog="git log"
-alias glogo="git log --oneline"
+alias gs="git status"
+alias gl="git log"
+alias glo="git log --oneline"
 
 
 # Old

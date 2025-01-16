@@ -21,14 +21,9 @@ function aws-function-logs() {
 	aws logs tail /aws/lambda/$functionName --follow
 }
 # AWS - Get queue attributes
-function aws-queue-attributes-dev() {
+function aws-queue-attributes() {
 	local queue_url=$1
 	aws sqs get-queue-attributes --queue-url $queue_url --attribute-names All | jq
-}
-# AWS - Get prod queue attributes
-function aws-queue-attributes-prod() {
-	local queue_url=$1
-	aws sqs get-queue-attributes --profile=prod --queue-url $queue_url --attribute-names All | jq
 }
 # AWS - List images by repo name
 function aws-list-images() {
