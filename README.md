@@ -23,7 +23,7 @@ Everything that needs to have a symlink created in ~/
 Everything that needs to be copied to ~/. This will be for files that want to be managed by git but still need some personal stuff added once copied. Think .gitconfig with my email address. 
 ### Source
 Everything to be sourced by the `.zshrc` once it is linked in the root. Prompt, aliases, etc...
-### Work
+#### Work.sh
 Things that I want to be able to use, but never tracked in git. Ex. Aliases and scripts that have to do with internal work stuff.
 ## TODO
 - Create file that runs everything and break into steps (copy, link, config, init, etc...)
