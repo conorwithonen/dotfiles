@@ -1,5 +1,5 @@
 # Start AeroSpace at login
-start-at-login = true
+start-at-login = false
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
@@ -57,11 +57,12 @@ alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
 alt-b = 'workspace Browser'
-alt-c = 'workspace Coding'
+alt-c = 'workspace Code'
 alt-e = 'workspace Email'
 alt-m = 'workspace Messages'
 alt-n = 'workspace Notes'
 alt-o = 'workspace O'
+alt-p = 'workspace P'
 alt-s = 'workspace Spotify'
 alt-t = 'workspace Terminal'
 alt-x = 'workspace Excel'
@@ -80,11 +81,12 @@ alt-shift-7 = 'move-node-to-workspace 7'
 alt-shift-8 = 'move-node-to-workspace 8'
 alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-b = 'move-node-to-workspace Browser'
-alt-shift-c = 'move-node-to-workspace Coding'
+alt-shift-c = 'move-node-to-workspace Code'
 alt-shift-e = 'move-node-to-workspace Email'
 alt-shift-m = 'move-node-to-workspace Messages'
 alt-shift-n = 'move-node-to-workspace Notes'
 alt-shift-o = 'move-node-to-workspace O'
+alt-shift-p = 'move-node-to-workspace P'
 alt-shift-s = 'move-node-to-workspace Spotify'
 alt-shift-t = 'move-node-to-workspace Terminal'
 alt-shift-x = 'move-node-to-workspace Excel'
@@ -130,6 +132,11 @@ run = "move-node-to-workspace Messages"
 if.app-id = 'md.obsidian'
 run = "move-node-to-workspace Notes"
 
+# Workspace P - Postman probably
+[[on-window-detected]]
+if.app-id = 'com.postmanlabs.mac'
+run = "move-node-to-workspace P"
+
 # Workspace E - Outlook
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Outlook'
@@ -148,4 +155,14 @@ run = 'layout floating'
 # Always float finder
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
+# Always float finder
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
+# Always float cyberduck
+[[on-window-detected]]
+if.app-id = 'ch.sudo.cyberduck'
 run = 'layout floating'

@@ -23,5 +23,13 @@
       ],
       "key": "M"
     }
+  ],
+  "insert-current-date": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": ";"
+    }
   ]
 }
