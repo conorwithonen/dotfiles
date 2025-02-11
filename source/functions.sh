@@ -66,3 +66,37 @@ function newkey() {
 	fi
 	ssh-keygen -t $type -b 4096 -C "${ssh_email}" -N '' -f "${filename}";
 }
+
+# Git - log with file and/or number argument
+function gl() {
+
+  oneline_flag=""
+  number_of_commits="" 
+
+  if [[ $# -eq 0 ]]; then
+    echo "Usage: gl [number_of_commits] [file_path]"
+    return 0
+  fi
+  # Oneline flag
+  if [[ "$1" =~ "--oneline" ]]; then
+    oneline_flag="--oneline"
+    shift
+  fi
+  # Commit numbers
+  if [[ "$1" =~ ^[0-9]+$ ]]; then
+    number_of_commits=$1
+    shift
+  fi
+  
+  if [[ -z "$number_of_commits" ]]; then
+    git log $oneline_flag -- "$@"
+  else
+    git log $oneline_flag -n "$number_of_commits" -- "$@"
+  fi
+}
+
+# Git - log with file and/or number argument
+function glo() {
+  gl --oneline "$@"
+}
+

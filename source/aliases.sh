@@ -17,9 +17,10 @@ alias sshconfig="vim ~/.ssh/config"
 # Git
 alias g="git"
 alias gs="git status"
-alias gl="git log"
-alias glo="git log --oneline"
-
+# Show entire commit
+alias gshow="git show"
+# Show only the files of the commit
+alias gshowf="git show --name-only"
 
 # Old
 alias ipython='python3 -m IPython'
