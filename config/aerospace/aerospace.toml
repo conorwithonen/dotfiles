@@ -117,7 +117,7 @@ run = "move-node-to-workspace Browser"
 # Workspace C
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
-run = "move-node-to-workspace Coding"
+run = "move-node-to-workspace Code"
 
 # Workspace M (Messages / Mail)
 [[on-window-detected]]
