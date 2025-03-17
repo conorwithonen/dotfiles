@@ -119,6 +119,10 @@ run = "move-node-to-workspace Browser"
 if.app-id = 'com.microsoft.VSCode'
 run = "move-node-to-workspace Code"
 
+[[on-window-detected]]
+if.app-id = 'dev.zed.zed'
+run = "move-node-to-workspace Code"
+
 # Workspace M (Messages / Mail)
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
@@ -165,4 +169,9 @@ run = 'layout floating'
 # Always float cyberduck
 [[on-window-detected]]
 if.app-id = 'ch.sudo.cyberduck'
+run = 'layout floating'
+
+# Always float preview
+[[on-window-detected]]
+if.app-id = 'com.apple.Preview'
 run = 'layout floating'
