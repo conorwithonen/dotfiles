@@ -69,7 +69,7 @@ alt-x = 'workspace Excel'
 
 # Move workspaces
 alt-tab = 'workspace-back-and-forth'
-alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+alt-backslash = 'move-workspace-to-monitor --wrap-around next'
 
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
@@ -120,7 +120,7 @@ if.app-id = 'com.microsoft.VSCode'
 run = "move-node-to-workspace Code"
 
 [[on-window-detected]]
-if.app-id = 'dev.zed.zed'
+if.app-id = 'dev.zed.Zed'
 run = "move-node-to-workspace Code"
 
 # Workspace M (Messages / Mail)
