@@ -1,5 +1,5 @@
 # Looks
-theme = Kanagawa Wave
+theme = "Kanagawa Wave"
 macos-titlebar-proxy-icon = visible
 font-size = 15
 
