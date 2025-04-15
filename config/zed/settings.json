@@ -7,6 +7,8 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "vim_mode": true,
+  "base_keymap": "VSCode",
   "collaboration_panel": {
     "dock": "right",
     "button": false
@@ -21,13 +23,25 @@
       "enabled": false
     }
   },
-  "icon_theme": "Catppuccin Macchiato",
+  "icon_theme": "VSCode Great Icons Theme",
   "buffer_font_family": "JetBrains Mono",
   "ui_font_size": 16,
   "buffer_font_size": 17,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Mocha"
+    "dark": "Kanagawa"
+  },
+  "format_on_save": "off",
+  "languages": {
+    "Python": {
+      "tab_size": 4,
+      "formatter": "language_server",
+      "format_on_save": "on"
+    },
+    "Terraform": {
+      "format_on_save": "off"
+    }
   }
+
 }
