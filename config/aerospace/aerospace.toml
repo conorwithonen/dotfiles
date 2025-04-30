@@ -107,7 +107,10 @@ alt-shift-l = ['join-with right', 'mode main']
 # Workspace T
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
-run = "move-node-to-workspace Terminal"
+run = [
+  "layout floating",
+  "move-node-to-workspace Terminal"
+] 
 
 # Workspace B - Browsers
 [[on-window-detected]]
