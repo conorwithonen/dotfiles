@@ -2,6 +2,11 @@
 function mkd() {
 	mkdir -p "$@" && cd "$_";
 }
+#
+# Copy
+function cpf() {
+	cat $1 | pbcopy
+}
 
 # Check expiration of certificate
 function check-cert() {
