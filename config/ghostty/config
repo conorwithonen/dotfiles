@@ -2,6 +2,8 @@
 theme = "Kanagawa Wave"
 macos-titlebar-proxy-icon = visible
 font-size = 15
+split-divider-color = "#727169"
+# split-divider-color = "#C34043"
 
 macos-option-as-alt = true
 
