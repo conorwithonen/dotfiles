@@ -4,6 +4,7 @@ macos-titlebar-proxy-icon = visible
 font-size = 15
 split-divider-color = "#727169"
 # split-divider-color = "#C34043"
+window-padding-y = 0,0
 
 macos-option-as-alt = true
 
