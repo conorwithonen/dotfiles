@@ -36,14 +36,30 @@ function aws-function-logs() {
 	aws logs tail /aws/lambda/$functionName --follow
 }
 # AWS - Get queue attributes
-function aws-queue-attributes() {
+function aws-describe-queue-attributes() {
 	local queue_url=$1
 	aws sqs get-queue-attributes --queue-url $queue_url --attribute-names All | jq
 }
-# AWS - List images by repo name
+# AWS - Get queue message
+function aws-receive-queue-message() {
+	local queue_url=$1
+	aws sqs receive-message --queue-url $queue_url --attribute-names All | jq
+}
+# AWS - purge queue
+function aws-purge-queue() {
+  unset AWS_PROFILE
+	local queue_url=$1
+	aws sqs purge-queue --queue-url $queue_url --attribute-names All | jq
+}
+# aws - list queues
+function aws-list-queues() {
+	local repo_name=$1
+	aws sqs list-queues | jq
+}
+# aws - list images by repo name
 function aws-list-images() {
 	local repo_name=$1
-	aws ecr list-images --repository-name $repo_name | jq '.imageIds[].imageTag'
+	aws ecr list-images --repository-name $repo_name | jq '.imageids[].imagetag'
 }
 # AWS - List instances
 function aws-list-instances() {
