@@ -147,7 +147,7 @@ run = "move-node-to-workspace P"
 # Workspace S - Spotify
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
-run = "move-node-to-workspace S"
+run = "move-node-to-workspace Spotify"
 
 # Workspace E - Outlook
 [[on-window-detected]]
