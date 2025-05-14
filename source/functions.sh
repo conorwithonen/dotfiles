@@ -59,7 +59,7 @@ function aws-list-queues() {
 # aws - list images by repo name
 function aws-list-images() {
 	local repo_name=$1
-	aws ecr list-images --repository-name $repo_name | jq '.imageids[].imagetag'
+  aws ecr list-images --repository-name $repo_name | jq '.imageIds[] | "\(.imageTag) \(.imageDigest)"'
 }
 # AWS - List instances
 function aws-list-instances() {
