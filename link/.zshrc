@@ -1,7 +1,15 @@
 # Leaving this until I have a better home for it
-autoload -U +X bashcompinit && bashcompinit
-
-# Where the magic happens whenever we can clear up the above stuff.
+UNAME=$(uname)
+case $UNAME in
+    Linux*)
+        export XDG_CONFIG_HOME="$HOME/.config"
+        export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+        ;;
+    *)
+        export XDG_CONFIG_HOME="$HOME"
+        autoload -U +X bashcompinit && bashcompinit
+        ;;
+esac
 export DOTFILES=~/dotfiles
 export EDITOR=nvim
 export VISUAL=$EDITOR
@@ -9,7 +17,7 @@ export VISUAL=$EDITOR
 # Source all files in "source"
 function src() {
   local file
-  if [[ "$1" ]]; then
+  if [ "$1" ]; then
     source "$DOTFILES/source/$1.sh"
   else
     for file in $DOTFILES/source/*; do
