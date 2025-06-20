@@ -17,6 +17,7 @@ alias sshconfig="vim ~/.ssh/config"
 # Git
 alias g="git"
 alias gs="git status"
+alias gfp="git fetch && git pull"
 # Show entire commit
 alias gshow="git show"
 # Show only the files of the commit
