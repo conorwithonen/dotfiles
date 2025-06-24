@@ -2,7 +2,9 @@
 autoload -U +X bashcompinit && bashcompinit
 
 # Where the magic happens whenever we can clear up the above stuff.
-export DOTFILES=~/.dotfiles
+export DOTFILES=~/dotfiles
+export EDITOR=nvim
+export VISUAL=$EDITOR
 
 # Source all files in "source"
 function src() {
