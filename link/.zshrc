@@ -5,6 +5,7 @@ autoload -U +X bashcompinit && bashcompinit
 export DOTFILES=~/dotfiles
 export EDITOR=nvim
 export VISUAL=$EDITOR
+export PATH="${HOME}/.cargo/bin:${PATH}"
 
 # Source all files in "source"
 function src() {
