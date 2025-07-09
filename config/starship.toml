@@ -16,7 +16,7 @@ $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
-$fill$python$aws\
+$fill$python$aws$time\
 \n$character"""
 
 [directory]
@@ -39,3 +39,10 @@ style = "bold yellow"
 
 [fill]
 symbol = ' '
+
+[time]
+disabled = false
+time_format = "%R"
+utc_time_offset = "local"
+style = "bg:color_bg1"
+format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
