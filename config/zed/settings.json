@@ -77,15 +77,28 @@
 	},
 	"current_line_highlight": "none",
   "gutter": {
-						// Whether to show line numbers in the gutter.
-						"line_numbers": true,
-						// Whether to show code action buttons in the gutter.
-						"code_actions": false,
-						// Whether to show runnables buttons in the gutter.
-						"runnables": false,
-						// Whether to show breakpoints in the gutter.
-						"breakpoints": false,
-						// Whether to show fold buttons in the gutter.
-						"folds": true
-				}
+    "line_numbers": true,
+    "code_actions": false,
+    "runnables": false,
+    "breakpoints": false,
+    "folds": true
+				},
+  "auto_install_extensions": {
+    "kanagawa-themes": true,
+    "colored-zed-icons-theme": true,
+    "html": true,
+    "dockerfile": true,
+    "docker-compose": true,
+    "lua": true,
+    "terraform": true,
+    "basher": true,
+    "git-firefly": true,
+    "liquid": true,
+    "nginx": true,
+    "nix": true,
+    "puppet": true,
+    "ruby": true,
+    "terraform": true,
+    "toml": true
+  }
 }
