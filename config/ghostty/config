@@ -26,7 +26,7 @@ keybind = super+alt+right_bracket=goto_split:next
 # Text
 keybind = super+c=copy_to_clipboard
 keybind = super+v=paste_from_clipboard
-keybind = ctrl+f=write_scrollback_file:open
+keybind = ctrl+shift+f=write_scrollback_file:open
 
 keybind = global:cmd+grave_accent=toggle_quick_terminal
 quick-terminal-position = bottom

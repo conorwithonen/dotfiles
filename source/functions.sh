@@ -73,6 +73,11 @@ function aws-describe-image() {
 	aws ec2 describe-instances --instance-ids $instance_id | jq
 }
 
+# AWS - Parameters
+function aws-list-parameters() {
+  aws ssm describe-parameters | jq '.Parameters[].Name'
+}
+
 # Docker - Open up Jupyter Lab container and open browser
 function j-lab() {
 	docker run --rm -d -p 8889:8888 \
