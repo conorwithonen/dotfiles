@@ -33,7 +33,7 @@
     "button": false
   },
   "agent": {
-    "version": "1",
+    "default_profile": "write",
     "dock": "right",
     "button": true
   },

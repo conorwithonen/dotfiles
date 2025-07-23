@@ -64,7 +64,8 @@ function aws-list-images() {
 # AWS - List instances
 function aws-list-instances() {
   aws ec2 describe-instances \
-    --query "Reservations[*].Instances[*].[InstanceId, Tags[?Key=='Name'].Value | [0], PrivateIpAddress]" \
+    --query "Reservations[*].Instances[*].[InstanceId, Tags[?Key=='Name'].Value | [0], PrivateIpAddress, InstanceType, State.Name]" \
+    --no-cli-pager \
     --output table
 }
 # AWS - Describe instance by id
