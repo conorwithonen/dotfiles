@@ -33,6 +33,10 @@
     "button": false
   },
   "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet"
+    },
     "default_profile": "write",
     "dock": "right",
     "button": true
