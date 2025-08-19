@@ -21,7 +21,7 @@ function y() {
 # Check expiration of certificate
 function check-cert() {
   local DOMAIN=$1
-  echo | openssl s_client -servername $DOMAIN -connect $DOMAIN:443 2> /dev/null | openssl x509 -noout -dates
+  echo | openssl s_client -servername $DOMAIN -connect $DOMAIN:443 2>/dev/null | openssl x509 -noout -subject -issuer -dates -ext subjectAltName
 }
 
 
