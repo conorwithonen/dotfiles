@@ -43,7 +43,7 @@
   },
   "git": {
     "inline_blame": {
-      "enabled": false
+      "enabled": true
     }
   },
   "icon_theme": "Zed (Default)",
@@ -82,7 +82,6 @@
 	"current_line_highlight": "none",
   "gutter": {
     "line_numbers": true,
-    "code_actions": false,
     "runnables": false,
     "breakpoints": false,
     "folds": true
@@ -102,7 +101,6 @@
     "nix": true,
     "puppet": true,
     "ruby": true,
-    "terraform": true,
     "toml": true
   }
 }
