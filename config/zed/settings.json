@@ -7,6 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "context_servers": {
+    "terraform-context-server": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {}
+    }
+  },
   "language_models": {
     "copilot_chat": {
       "api_url": "https://api.githubcopilot.com/chat/completions",
@@ -53,7 +60,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Kanagawa Wave"
+    "dark": "Kanagawa"
   },
   "format_on_save": "off",
   "languages": {
