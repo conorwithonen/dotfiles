@@ -40,11 +40,12 @@
     "button": false
   },
   "agent": {
+    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-5-sonnet"
+      "model": "claude-sonnet-4"
     },
-    "default_profile": "write",
+    "default_profile": "ask",
     "dock": "right",
     "button": true
   },
@@ -53,9 +54,9 @@
       "enabled": true
     }
   },
-  "icon_theme": "Zed (Default)",
+  "icon_theme": "Colored Zed Icons Theme Dark",
   "buffer_font_family": "JetBrains Mono",
-  "ui_font_size": 14,
+  "ui_font_size": 15,
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
