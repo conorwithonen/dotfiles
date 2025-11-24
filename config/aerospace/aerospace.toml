@@ -58,7 +58,7 @@ alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
 alt-b = 'workspace Browser'
 alt-c = 'workspace Code'
-alt-e = 'workspace Email'
+alt-e = 'workspace Messages'
 alt-m = 'workspace Messages'
 alt-n = 'workspace Notes'
 alt-o = 'workspace O'
@@ -103,13 +103,17 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
+# Workspace 1
+[[on-window-detected]]
+if.app-id = 'com.bitwarden.desktop'
+run = "move-node-to-workspace 1"
 
 # Workspace T
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = [
   "layout floating"
-] 
+]
 
 # Workspace B - Browsers
 [[on-window-detected]]
@@ -155,7 +159,7 @@ run = "move-node-to-workspace Spotify"
 # Workspace E - Outlook
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Outlook'
-run = "move-node-to-workspace Email"
+run = "move-node-to-workspace Messages"
 
 # Workspace X - Excel
 [[on-window-detected]]

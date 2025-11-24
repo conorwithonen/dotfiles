@@ -10,7 +10,8 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-      "ctrl-r": "projects::OpenRecent"
+      "ctrl-r": "projects::OpenRecent",
+      "space f f": "file_finder::Toggle"
     }
   },
   {
@@ -26,7 +27,6 @@
 			"space b": "git::Blame",
 			"space l f": "editor::Format",
 			"space d": "diagnostics::Deploy",
-			"space f f": "file_finder::Toggle",
 			"space o": "tab_switcher::Toggle",
 			"space e": "workspace::ToggleLeftDock",
 			"space /": "editor::ToggleComments",
@@ -35,7 +35,21 @@
 			"space c": "pane::CloseActiveItem"
 		}
 	},
+	// Vim: File tree bindings
 	{
+  	"context": "ProjectPanel && not_editing",
+  	"bindings": {
+     	"o": "menu::Confirm",
+     	"r": "project_panel::Rename",
+     	"a": "project_panel::NewFile",
+     	"shift-a": "project_panel::NewDirectory",
+      "x": "project_panel::Cut",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste",
+     	"d": "project_panel::Delete"
+   	}
+  	},
+  	{
 		"context": "TabSwitcher",
 		"bindings": {
 			"d": "tab_switcher::CloseSelectedItem",
@@ -57,10 +71,6 @@
 			"cmd-k l": "workspace::ActivatePaneRight",
 			"cmd-k k": "workspace::ActivatePaneUp",
 			"cmd-k j": "workspace::ActivatePaneDown",
-			// "ctrl-h": "workspace::ActivatePaneLeft",
-			// "ctrl-l": "workspace::ActivatePaneRight",
-			// "ctrl-k": "workspace::ActivatePaneUp",
-			// "ctrl-j": "workspace::ActivatePaneDown",
 			"cmd-k shift-h": [
             "workspace::MoveItemToPaneInDirection",
             { "direction": "left" }
@@ -78,5 +88,22 @@
             { "direction": "right" }
         ]
 		}
-	}
+	},
+ {
+   "context": "vim_mode == normal",
+   "bindings": {
+     "shift-tab": "pane::ActivatePreviousItem"
+   }
+ },
+ {
+   "context": "vim_mode == normal",
+   "bindings": {
+     "tab ": "pane::ActivateNextItem"
+   }
+ },
+ {
+   "bindings": {
+     "alt-cmd-i": null
+   }
+ }
 ]
