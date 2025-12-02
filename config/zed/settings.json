@@ -16,7 +16,6 @@
   },
   "context_servers": {
     "terraform-context-server": {
-      "source": "extension",
       "enabled": true,
       "settings": {}
     }
@@ -104,20 +103,22 @@
     "folds": true
 				},
   "auto_install_extensions": {
-    "kanagawa-themes": true,
-    "colored-zed-icons-theme": true,
-    "html": true,
-    "dockerfile": true,
-    "docker-compose": true,
-    "lua": true,
-    "terraform": true,
     "basher": true,
+    "colored-zed-icons-theme": true,
+    "docker-compose": true,
+    "dockerfile": true,
     "git-firefly": true,
+    "html": true,
+    "kanagawa-themes": true,
     "liquid": true,
+    "lua": true,
     "nginx": true,
     "nix": true,
     "puppet": true,
+    "python-snippets": true,
     "ruby": true,
+    "terraform": true,
+    "terraform-context-server": true,
     "toml": true
   }
 }
