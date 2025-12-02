@@ -137,3 +137,7 @@ function glo() {
   gl --oneline "$@"
 }
 
+# Git - Cleanup branches
+function gclean() {
+  git branch -d $(git branch --merged | grep -vE 'main|master|develop|staging')
+}

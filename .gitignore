@@ -1,5 +1,6 @@
 .ssh/*
 */work*
+*/extra*
 
 # Compiled Python files
 *.pyc
