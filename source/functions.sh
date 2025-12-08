@@ -30,6 +30,11 @@ function aws-account() {
   aws iam list-account-aliases | jq ".AccountAliases[0]" -r
 }
 
+# AWS - Get log groups
+function aws-list-log-groups() {
+  aws logs describe-log-groups | jq ".logGroups[].logGroupName"
+}
+
 # AWS - follow log group for by function name
 function aws-function-logs() {
 	local functionName=$1
