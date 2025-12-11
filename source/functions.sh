@@ -18,6 +18,15 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# General - Show files downloaded today
+function downloads() {
+  find ~/Downloads -maxdepth 1 -type f -mtime 0 | xargs ls -la
+}
+
+function dots() {
+ cd $DOTFILES
+}
+
 # Check expiration of certificate
 function check-cert() {
   local DOMAIN=$1
@@ -146,3 +155,4 @@ function glo() {
 function gclean() {
   git branch -d $(git branch --merged | grep -vE 'main|master|develop|staging')
 }
+
