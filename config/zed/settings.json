@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "project_panel": {
+    "dock": "left"
+  },
   "redact_private_values": false,
   "title_bar": {
     "show_branch_icon": true
@@ -65,7 +68,7 @@
   "icon_theme": "Colored Zed Icons Theme Dark",
   "buffer_font_family": "JetBrains Mono",
   "ui_font_size": 17,
-  "buffer_font_size": 17,
+  "buffer_font_size": 16,
   "theme": {
     "mode": "system",
     "light": "One Light",
@@ -95,7 +98,7 @@
 		"breadcrumbs": false,
 		"quick_actions": false
 	},
-	"current_line_highlight": "none",
+	"current_line_highlight": "gutter",
   "gutter": {
     "line_numbers": true,
     "runnables": false,

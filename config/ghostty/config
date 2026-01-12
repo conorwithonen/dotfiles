@@ -2,7 +2,7 @@
 theme = "Kanagawa wave"
 macos-titlebar-proxy-icon = visible
 macos-titlebar-style = transparent
-font-size = 15
+font-size = 16
 split-divider-color = "#727169"
 # split-divider-color = "#C34043"
 title = ""

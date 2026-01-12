@@ -122,7 +122,7 @@ function newkey() {
 function gl() {
 
   oneline_flag=""
-  number_of_commits="5" 
+  number_of_commits="20" 
 
   if [[ $# -eq 0 ]]; then
     echo "Usage: gl [number_of_commits] [file_path]"
