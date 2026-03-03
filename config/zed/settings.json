@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "git_panel": {
+    "tree_view": false
+  },
   "project_panel": {
     "dock": "left"
   },
@@ -49,7 +52,9 @@
     "button": false
   },
   "agent": {
-    "always_allow_tool_actions": true,
+    "tool_permissions": {
+      "default": "allow"
+    },
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-sonnet-4-5"
@@ -124,5 +129,14 @@
     "terraform-context-server": true,
     "toml": true
   },
-"tabs" : { "file_icons": true }
+"tabs" : { "file_icons": true },
+"lsp": {
+  "yaml-language-server": {
+    "settings": {
+      "schemas": {
+        "https://yamlresume.dev/schema.json": ["/*"],
+      }
+    }
+  }
+}
 }
