@@ -7,31 +7,62 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "vim": {
+    "toggle_relative_line_numbers": false
+  },
+  "terminal": {
+    "show_count_badge": false,
+  },
+  "diff_view_style": "unified",
+  "agent_servers": {
+    "cursor": {
+      "favorite_config_option_values": {
+        "mode": [
+          "ask"
+        ]
+      },
+      "type": "registry"
+    },
+    "codex-acp": {
+      "default_config_options": {
+        "mode": "auto"
+      },
+      "type": "registry"
+    }
+  },
   "git_panel": {
-    "tree_view": false
+    "dock": "left",
+    "tree_view": true
   },
   "project_panel": {
+    "hide_hidden": false,
     "dock": "left"
   },
   "redact_private_values": false,
   "title_bar": {
-    "show_branch_icon": true
+    "show_branch_status_icon": true
   },
   "outline_panel": {
+    "dock": "left",
     "button": true
   },
   "context_servers": {
+    "Atlassian-Rovo-MCP": {
+      "enabled": true,
+      "remote": false,
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://mcp.atlassian.com/v1/mcp/authv2"
+      ]
+    },
     "terraform-context-server": {
       "enabled": true,
       "settings": {}
     }
   },
   "language_models": {
-    "copilot_chat": {
-      "api_url": "https://api.githubcopilot.com/chat/completions",
-      "auth_url": "https://api.github.com/copilot_internal/v2/token",
-      "models_url": "https://api.githubcopilot.com/models"
-    }
   },
   "auto_update_extensions": {
     "kanagawa-themes": false
@@ -43,7 +74,6 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_text_threads": false
   },
   "vim_mode": true,
   "base_keymap": "VSCode",
@@ -52,6 +82,7 @@
     "button": false
   },
   "agent": {
+    "sidebar_side": "right",
     "tool_permissions": {
       "default": "allow"
     },
@@ -87,7 +118,7 @@
       "format_on_save": "on"
     },
     "Terraform": {
-      "format_on_save": "off"
+      "format_on_save": "on"
     }
   },
  	"cursor_blink": false,
