@@ -1,5 +1,7 @@
 # Leaving this until I have a better home for it
 autoload -U +X bashcompinit && bashcompinit
+autoload -Uz compinit
+compinit
 
 # Where the magic happens whenever we can clear up the above stuff.
 export DOTFILES=~/dotfiles

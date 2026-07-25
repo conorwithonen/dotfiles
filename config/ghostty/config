@@ -1,12 +1,12 @@
 # Looks
-theme = "Kanagawa wave"
+theme = "Kanagawa Wave"
 macos-titlebar-proxy-icon = visible
 macos-titlebar-style = transparent
 font-size = 16
 split-divider-color = "#727169"
 # split-divider-color = "#C34043"
 title = ""
-background-opacity = 0.95
+background-opacity = 0.99
 background-blur = true
 window-padding-y = 0,0
 
