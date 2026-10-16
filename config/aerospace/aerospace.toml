@@ -58,7 +58,7 @@ alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
 alt-b = 'workspace Browser'
 alt-c = 'workspace Code'
-alt-e = 'workspace Messages'
+alt-e = 'workspace Email'
 alt-m = 'workspace Messages'
 alt-n = 'workspace Notes'
 alt-o = 'workspace O'
@@ -159,7 +159,7 @@ run = "move-node-to-workspace Spotify"
 # Workspace E - Outlook
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Outlook'
-run = "move-node-to-workspace Messages"
+run = "move-node-to-workspace Email"
 
 # Workspace X - Excel
 [[on-window-detected]]

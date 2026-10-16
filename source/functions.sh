@@ -18,6 +18,15 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# General - Show files downloaded today
+function downloads() {
+  find ~/Downloads -maxdepth 1 -type f -mtime 0 | xargs ls -la
+}
+
+function dots() {
+ cd $DOTFILES
+}
+
 # Check expiration of certificate
 function check-cert() {
   local DOMAIN=$1
@@ -28,6 +37,11 @@ function check-cert() {
 # AWS - Get currently logged in aws account name
 function aws-account() {
   aws iam list-account-aliases | jq ".AccountAliases[0]" -r
+}
+
+# AWS - Get log groups
+function aws-list-log-groups() {
+  aws logs describe-log-groups | jq ".logGroups[].logGroupName"
 }
 
 # AWS - follow log group for by function name
@@ -108,7 +122,7 @@ function newkey() {
 function gl() {
 
   oneline_flag=""
-  number_of_commits="5" 
+  number_of_commits="20" 
 
   if [[ $# -eq 0 ]]; then
     echo "Usage: gl [number_of_commits] [file_path]"
@@ -135,5 +149,10 @@ function gl() {
 # Git - log with file and/or number argument
 function glo() {
   gl --oneline "$@"
+}
+
+# Git - Cleanup branches
+function gclean() {
+  git branch -d $(git branch --merged | grep -vE 'main|master|develop|staging')
 }
 

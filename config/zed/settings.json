@@ -7,26 +7,62 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "vim": {
+    "toggle_relative_line_numbers": false
+  },
+  "terminal": {
+    "show_count_badge": false,
+  },
+  "diff_view_style": "unified",
+  "agent_servers": {
+    "cursor": {
+      "favorite_config_option_values": {
+        "mode": [
+          "ask"
+        ]
+      },
+      "type": "registry"
+    },
+    "codex-acp": {
+      "default_config_options": {
+        "mode": "auto"
+      },
+      "type": "registry"
+    }
+  },
+  "git_panel": {
+    "dock": "left",
+    "tree_view": true
+  },
+  "project_panel": {
+    "hide_hidden": false,
+    "dock": "left"
+  },
   "redact_private_values": false,
   "title_bar": {
-    "show_branch_icon": true
+    "show_branch_status_icon": true
   },
   "outline_panel": {
+    "dock": "left",
     "button": true
   },
   "context_servers": {
+    "Atlassian-Rovo-MCP": {
+      "enabled": true,
+      "remote": false,
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://mcp.atlassian.com/v1/mcp/authv2"
+      ]
+    },
     "terraform-context-server": {
-      "source": "extension",
       "enabled": true,
       "settings": {}
     }
   },
   "language_models": {
-    "copilot_chat": {
-      "api_url": "https://api.githubcopilot.com/chat/completions",
-      "auth_url": "https://api.github.com/copilot_internal/v2/token",
-      "models_url": "https://api.githubcopilot.com/models"
-    }
   },
   "auto_update_extensions": {
     "kanagawa-themes": false
@@ -38,7 +74,6 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_text_threads": false
   },
   "vim_mode": true,
   "base_keymap": "VSCode",
@@ -47,7 +82,10 @@
     "button": false
   },
   "agent": {
-    "always_allow_tool_actions": true,
+    "sidebar_side": "right",
+    "tool_permissions": {
+      "default": "allow"
+    },
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-sonnet-4-5"
@@ -66,11 +104,11 @@
   "icon_theme": "Colored Zed Icons Theme Dark",
   "buffer_font_family": "JetBrains Mono",
   "ui_font_size": 17,
-  "buffer_font_size": 17,
+  "buffer_font_size": 16,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Kanagawa"
+    "dark": "Kanagawa Wave"
   },
   "format_on_save": "off",
   "languages": {
@@ -80,7 +118,7 @@
       "format_on_save": "on"
     },
     "Terraform": {
-      "format_on_save": "off"
+      "format_on_save": "on"
     }
   },
  	"cursor_blink": false,
@@ -96,7 +134,7 @@
 		"breadcrumbs": false,
 		"quick_actions": false
 	},
-	"current_line_highlight": "none",
+	"current_line_highlight": "gutter",
   "gutter": {
     "line_numbers": true,
     "runnables": false,
@@ -104,20 +142,32 @@
     "folds": true
 				},
   "auto_install_extensions": {
-    "kanagawa-themes": true,
-    "colored-zed-icons-theme": true,
-    "html": true,
-    "dockerfile": true,
-    "docker-compose": true,
-    "lua": true,
-    "terraform": true,
     "basher": true,
+    "colored-zed-icons-theme": true,
+    "docker-compose": true,
+    "dockerfile": true,
     "git-firefly": true,
+    "html": true,
+    "kanagawa-themes": true,
     "liquid": true,
+    "lua": true,
     "nginx": true,
     "nix": true,
     "puppet": true,
+    "python-snippets": true,
     "ruby": true,
+    "terraform": true,
+    "terraform-context-server": true,
     "toml": true
+  },
+"tabs" : { "file_icons": true },
+"lsp": {
+  "yaml-language-server": {
+    "settings": {
+      "schemas": {
+        "https://yamlresume.dev/schema.json": ["/*"],
+      }
+    }
   }
+}
 }

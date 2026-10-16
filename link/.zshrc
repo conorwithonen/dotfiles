@@ -1,27 +1,20 @@
 # Leaving this until I have a better home for it
 autoload -U +X bashcompinit && bashcompinit
+autoload -Uz compinit
+compinit
 
 # Where the magic happens whenever we can clear up the above stuff.
 export DOTFILES=~/dotfiles
-export EDITOR=nvim
-export VISUAL=$EDITOR
-export PATH="${HOME}/.cargo/bin:${PATH}"
 
-# Source all files in "source"
-function src() {
-  local file
-  if [[ "$1" ]]; then
-    source "$DOTFILES/source/$1.sh"
-  else
-    for file in $DOTFILES/source/*; do
-      source "$file"
-    done
-  fi
-}
+# Source all files to "source"
+# shellcheck source=~
+for file in "$DOTFILES"/source/*; do
+    source "$file"
+done
 
-# Run dotfiles script, then source.
-function dotfiles() {
-  $DOTFILES/bin/dotfiles "$@" && src
-}
+unset file;
 
-src
+# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
+# aws completion
+complete -C '/usr/local/bin/aws_completer' aws
