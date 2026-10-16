@@ -1,0 +1,9 @@
+id = "3FADC36B-3D3C-40B8-AD47-1DEE1EB615EC"
+order = 3
+
+[match]
+bundleId = "com.tinyspeck.slackmacgap"
+
+[effect]
+layout = "tile"
+assignToWorkspace = "2"

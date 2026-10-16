@@ -1,0 +1,9 @@
+id = "F24AAAEF-6196-4587-99CA-A7FB1D3A75DC"
+order = 0
+
+[match]
+bundleId = "com.mitchellh.ghostty"
+
+[effect]
+layout = "tile"
+assignToWorkspace = "4"

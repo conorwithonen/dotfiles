@@ -1,0 +1,9 @@
+id = "E4AF3548-52FE-4BBF-AD72-8FFE2561B28B"
+order = 4
+
+[match]
+bundleId = "com.microsoft.teams2"
+
+[effect]
+layout = "tile"
+assignToWorkspace = "2"

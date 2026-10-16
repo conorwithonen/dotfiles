@@ -1,0 +1,9 @@
+id = "DF598F09-A587-4191-844D-FE922019DBA5"
+order = 6
+
+[match]
+bundleId = "md.obsidian"
+
+[effect]
+layout = "float"
+assignToWorkspace = "1"
