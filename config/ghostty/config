@@ -1,5 +1,5 @@
 # Looks
-theme = "Kanagawa Wave"
+theme = "kanagawabones"
 macos-titlebar-proxy-icon = visible
 macos-titlebar-style = transparent
 font-size = 16
@@ -32,3 +32,12 @@ keybind = global:cmd+grave_accent=toggle_quick_terminal
 quick-terminal-position = bottom
 quick-terminal-screen = mouse
 quick-terminal-animation-duration = 0
+
+# When to notify: 'never', 'unfocused' (default), or 'always'
+notify-on-command-finish = unfocused
+
+# How to notify: 'bell' (sound/visual), 'notify' (system notification), or both
+notify-on-command-finish-action = bell,notify
+
+# Minimum duration (in seconds) the command must run before it triggers a ping
+notify-on-command-finish-after = 5s
