@@ -1,0 +1,9 @@
+id = "B92D1B6E-DFA2-4BB4-A450-82F7176CDE22"
+order = 5
+
+[match]
+bundleId = "com.microsoft.Outlook"
+
+[effect]
+layout = "tile"
+assignToWorkspace = "2"

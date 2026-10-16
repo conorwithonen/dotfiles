@@ -1,0 +1,27 @@
+[1]
+displayName = "Browser"
+monitor = "main"
+
+[2]
+displayName = "Messaging"
+monitor = "secondary"
+
+[3]
+displayName = "Code"
+monitor = "main"
+
+[4]
+displayName = "Terminal"
+monitor = "main"
+
+[5]
+monitor = "main"
+
+[6]
+monitor = "secondary"
+
+[7]
+monitor = "secondary"
+
+[8]
+monitor = "main"
