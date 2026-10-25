@@ -47,16 +47,6 @@
     "button": true
   },
   "context_servers": {
-    "Atlassian-Rovo-MCP": {
-      "enabled": true,
-      "remote": false,
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote@latest",
-        "https://mcp.atlassian.com/v1/mcp/authv2"
-      ]
-    },
     "terraform-context-server": {
       "enabled": true,
       "settings": {}
