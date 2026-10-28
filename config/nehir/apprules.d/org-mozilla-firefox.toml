@@ -1,0 +1,9 @@
+id = "38DB7DE8-8190-4DDF-B527-697844D851B5"
+order = 2
+
+[match]
+bundleId = "org.mozilla.firefox"
+
+[effect]
+layout = "tile"
+assignToWorkspace = "1"

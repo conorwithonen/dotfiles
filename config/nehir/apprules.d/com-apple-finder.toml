@@ -1,0 +1,8 @@
+id = "E08AB541-4966-4E20-963D-07D351AAD537"
+order = 8
+
+[match]
+bundleId = "com.apple.finder"
+
+[effect]
+layout = "float"
