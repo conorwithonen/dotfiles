@@ -15,7 +15,7 @@ red = 0.08458520228437894
 [focus]
 followsMouse = false
 followsWindowToMonitor = false
-moveMouseToFocusedWindow = true
+moveMouseToFocusedWindow = false
 
 [gaps]
 size = 2.0
@@ -29,7 +29,7 @@ top = 0.0
 [general]
 developerModeEnabled = false
 hotkeysEnabled = true
-ipcEnabled = false
+ipcEnabled = true
 preventSleepEnabled = false
 
 [gestures]
@@ -43,23 +43,23 @@ scrollSensitivity = 5.0
 [mouseWarp]
 axis = "horizontal"
 margin = 1
-monitorOrder = []
+monitorOrder = ["DELL P2422H", "HP VH240a"]
 
 [niri]
 balancedColumnCount = 2
 columnWidthPresets = [0.35, 0.5, 0.65, 0.95]
-infiniteLoop = false
+infiniteLoop = true
 revealPartial = "default"
 
 [statusBar]
-showAppNames = false
+showAppNames = true
 showWorkspaceName = true
 useWorkspaceId = false
 
 [workspaceBar]
 backgroundOpacity = 0.1
 deduplicateAppIcons = false
-enabled = false
+enabled = true
 height = 24.0
 hideEmptyWorkspaces = true
 labelFontSize = 12.0

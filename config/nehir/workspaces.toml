@@ -4,11 +4,11 @@ monitor = "main"
 
 [2]
 displayName = "Messaging"
-monitor = "secondary"
+monitor = "main"
 
 [3]
 displayName = "Code"
-monitor = "main"
+monitor = "secondary"
 
 [4]
 displayName = "Terminal"
@@ -18,10 +18,10 @@ monitor = "main"
 monitor = "main"
 
 [6]
-monitor = "secondary"
+monitor = "main"
 
 [7]
-monitor = "secondary"
+monitor = "main"
 
 [8]
 monitor = "main"
