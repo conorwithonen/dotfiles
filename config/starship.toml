@@ -16,7 +16,7 @@ $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
-$fill$python$aws$time\
+$fill$python${custom.aws_session}$time\
 \n$character"""
 
 [directory]
@@ -33,8 +33,20 @@ format = '(\([$virtualenv]($style)\) )'
 style = "bold red"
 detect_extensions = []
 
+# Profile, cloud, and login time are one segment. $duration stays empty for aws login,
+# and putting it in this format prints "[]".
 [aws]
-format = '(\([$profile]($style)\) )'
+disabled = true
+
+[custom.aws_session]
+description = "Cloud, profile, and aws login time"
+when = true
+shell = ["zsh", "-f"]
+use_stdin = true
+command = '. /Users/conor.manning/dotfiles/bin/aws-login-remaining.zsh'
+# Nerd-font cloud is one cell wide. The emoji cloud is two cells in the terminal
+# and one cell to Starship, so $fill wraps and leaves a blank line above ->.
+format = '([  $output ]($style))'
 style = "bold yellow"
 
 [fill]
