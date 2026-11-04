@@ -19,22 +19,16 @@
 # surimiOrange  "#ffa066"
 # waveAqua2     "#7aa89f"
 
-[manager]
+[mgr]
 marker_copied = { fg = "#98bb6c", bg = "#98bb6c" }
 marker_cut = { fg = "#e46876", bg = "#e46876" }
 marker_marked = { fg = "#957fb8", bg = "#957fb8" }
 marker_selected = { fg = "#ffa066", bg = "#ffa066" }
 
 cwd = { fg = "#e6c384" }
-hovered = { reversed = true }
-preview_hovered = { reversed = true }
 
 find_keyword = { fg = "#ffa066", bg = "#1f1f28" }
 find_position = {}
-
-tab_active = { reversed = true }
-tab_inactive = {}
-tab_width = 1
 
 count_copied = { fg = "#1f1f28", bg = "#98bb6c" }
 count_cut = { fg = "#1f1f28", bg = "#e46876" }
@@ -42,6 +36,16 @@ count_selected = { fg = "#1f1f28", bg = "#e6c384" }
 
 border_symbol = "│"
 border_style = { fg = "#dcd7ba" }
+
+
+[indicator]
+current = { reversed = true }
+preview = { reversed = true }
+
+
+[tabs]
+active = { reversed = true }
+inactive = {}
 
 
 [mode]
@@ -80,7 +84,7 @@ title = {}
 value = {}
 selected = { reversed = true }
 
-[completion]
+[cmp]
 border = { fg = "#7fb4ca" }
 active = { reversed = true }
 inactive = {}
@@ -100,11 +104,9 @@ cand = { fg = "#7e9cd8" }
 desc = { fg = "#54546d" }
 
 [help]
-on = { fg = "#7aa89f" }
-run = { fg = "#957fb8" }
-desc = {}
+chord = { fg = "#7aa89f" }
+action = { fg = "#957fb8" }
 hovered = { reversed = true, bold = true }
-footer = { fg = "#1f1f28", bg = "#dcd7ba" }
 
 [notify]
 title_info = { fg = "#98bb6c" }
@@ -126,12 +128,12 @@ rules = [
     { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#6a9589" },
 
     # broken links
-    { name = "*", is = "orphan", fg = "#c34043" },
+    { url = "*", is = "orphan", fg = "#c34043" },
 
     # executables
-    { name = "*", is = "exec", fg = "#76946a" },
+    { url = "*", is = "exec", fg = "#76946a" },
 
     # fallback
-    { name = "*", fg = "#dcd7ba" },
-    { name = "*/", fg = "#7e9cd8" },
+    { url = "*", fg = "#dcd7ba" },
+    { url = "*/", fg = "#7e9cd8" },
 ]
