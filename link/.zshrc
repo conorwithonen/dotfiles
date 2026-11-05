@@ -1,4 +1,5 @@
 # Leaving this until I have a better home for it
+# shellcheck source=/dev/null
 autoload -U +X bashcompinit && bashcompinit
 autoload -Uz compinit
 compinit
@@ -14,8 +15,8 @@ done
 
 unset file;
 
-src
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 # aws completion
-complete -C '/Users/conor.manning/.local/bin/aws_completer' aws
+complete -C "$HOME/.local/bin/aws_completer" aws
+source <(COMPLETE=zsh jj)
