@@ -1,0 +1,9 @@
+id = "4BDA77FF-698F-414B-B4DA-83DDC846993C"
+order = 7
+
+[match]
+bundleId = "com.todesktop.230313mzl4w4u92"
+
+[effect]
+layout = "tile"
+assignToWorkspace = "3"

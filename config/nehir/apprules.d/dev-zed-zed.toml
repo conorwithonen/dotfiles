@@ -1,0 +1,9 @@
+id = "1DF290BB-A3DB-49AC-B742-8C98ADE3DE9C"
+order = 1
+
+[match]
+bundleId = "dev.zed.Zed"
+
+[effect]
+layout = "tile"
+assignToWorkspace = "3"
